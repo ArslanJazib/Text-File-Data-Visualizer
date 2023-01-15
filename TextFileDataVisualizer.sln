@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1267
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Text File Data Visualizer", "Text File Data Visualizer\Text File Data Visualizer.pyproj", "{5AB42F67-AAD8-40C8-9DD5-BD4DDC22D9D0}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TextFileDataVisualizer", "TextFileDataVisualizer\TextFileDataVisualizer.pyproj", "{5AB42F67-AAD8-40C8-9DD5-BD4DDC22D9D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +18,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6EC5F72A-E2C5-45DB-A4A4-AE3086B2B388}
+		SolutionGuid = {E7268D19-5B3C-485C-B1E3-8F8AB02C72A8}
 	EndGlobalSection
 EndGlobal

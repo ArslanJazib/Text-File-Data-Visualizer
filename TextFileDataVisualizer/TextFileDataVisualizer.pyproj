@@ -21,6 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ContentAnalyzer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataVisualizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Text_File_Data_Visualizer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
