@@ -1,13 +1,16 @@
 import re
+import sys
 class FileHandler(object):
     """This class deals with the aspect of extracting data from the text file selected by the user"""
     
     def __init__(self,fileName):
         self.fileName = fileName
-        self.fileReader = open(fileName, 'r')
-
-    def __del__(self):
-        self.fileReader.close()
+        # Exception handling
+        try:
+            self.fileReader = open(fileName, 'r')
+        except FileNotFoundError:
+            self.fileName = "errorFileNotFound"
+            return
 
     def get_content(self,tokenizationFlag=False):
         data = self.fileReader.read()

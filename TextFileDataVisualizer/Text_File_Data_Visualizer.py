@@ -71,20 +71,21 @@ def main():
     # Creaing File Handler Object
     fileHandlerObj = fileLibrary.FileHandler(fileName)
 
-    fileContent = get_file_content(fileHandlerObj)
+    if(fileHandlerObj.fileName=="errorFileNotFound"):
+        print("\nIncorrect File Name")
+    else:
+        fileContent = get_file_content(fileHandlerObj)
 
-    # Creaing and intializing Content Visualizer Object
-    analyzerObj = analyzerLibrary.ContentAnalyzer(fileContent)
+        # Creaing and intializing Content Visualizer Object
+        analyzerObj = analyzerLibrary.ContentAnalyzer(fileContent)
 
-    analyzedContent = get_analyzed_content(analyzerObj,fileHandlerObj)
+        analyzedContent = get_analyzed_content(analyzerObj,fileHandlerObj)
 
-    # Creaing and intializing Data Visualizer Object For Web Interface
-    visualizerObj = visualizerLibrary.DataVisualizer(analyzedContent)
+        # Creaing and intializing Data Visualizer Object For Web Interface
+        visualizerObj = visualizerLibrary.DataVisualizer(analyzedContent)
 
-    initialize_web_app_content(visualizerObj)
-    
-    os.system('pause')
-
+        initialize_web_app_content(visualizerObj)
+        
 if __name__ == "__main__":
     if runtime.exists():
         a = None

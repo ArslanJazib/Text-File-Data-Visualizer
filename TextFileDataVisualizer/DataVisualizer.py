@@ -22,7 +22,6 @@ class DataVisualizer(object):
         st.pyplot(fig)
 
     def generate_least_bar_graph(self):
-        print(self.analyzedContent.get('totalLeastUsedWords'))
         leastUsedWords = self.analyzedContent.get('totalLeastUsedWords')
         words = []
         for word in leastUsedWords:
