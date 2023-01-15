@@ -9,4 +9,4 @@ This python application uses a text file containing strings and visualizes its c
 
 4: Data Visualizer Module Initializes all the matplotlib graphs that are to be displayed on the streamlit dashboard
 
-The program can be invoked via command line the person has to type pathToFile.Text_File_Data_Visualizer.py TextFileName.txt. Steamlit is initialized from within main python script
+Once the user enters the name of their text file the graphs are reflected on streamlit in your browser
