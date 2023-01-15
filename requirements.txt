@@ -1,0 +1,4 @@
+To implement this program you need the following packages installed on your system
+1: Python > = 3.7
+2: Streamlit
+3: Matplotlib
